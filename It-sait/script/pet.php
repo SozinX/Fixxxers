@@ -1,0 +1,22 @@
+<?php
+session_start();
+require 'connect.php';
+$owner = $_SESSION['user']['id'];
+$id = $_POST['id'];
+$name = $_POST['name'];
+$type = $_POST['type'];
+$age = $_POST['age'];
+$breed = $_POST['breed'];
+$male = $_POST['male'];
+$size = $_POST['size'];
+$color = $_POST['color'];
+$description = $_POST['desc'];
+$update = mysqli_query($connect, "UPDATE `pets` SET `name` ='$name' WHERE `id`='$id'");
+$update = mysqli_query($connect, "UPDATE `pets` SET `type` ='$type' WHERE `id`='$id'");
+$update = mysqli_query($connect, "UPDATE `pets` SET `age` ='$age' WHERE `id`='$id'");
+$update = mysqli_query($connect, "UPDATE `pets` SET `breed` ='$breed' WHERE `id`='$id'");
+$update = mysqli_query($connect, "UPDATE `pets` SET `male` ='$male' WHERE `id`='$id'");
+$update = mysqli_query($connect, "UPDATE `pets` SET `size` ='$size' WHERE `id`='$id'");
+$update = mysqli_query($connect, "UPDATE `pets` SET `color` ='$color' WHERE `id`='$id'");
+$update = mysqli_query($connect, "UPDATE `pets` SET `description` ='$description' WHERE `id`='$id'");
+header("Location: ../pets.php");

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet found!</title>
+    <link rel="stylesheet" href="css/qr.css">
+</head>
+
+<body>
+    <form class="top">
+        <div class="head">
+            <p>Вітаю! Ви знайшли загубленого *name*</p>
+        </div>
+        <p id="owninf">Інформація про власника:</p>
+        <div class="window">
+            <img src="images/accph.png">
+
+            <div id="name">
+                <p>ПІБ</p>
+                <input class="name" type="text">
+            </div>
+
+            <div id="tg">
+                <p>Telegram</p>
+                <input class="tg" type="text">
+            </div>
+            <div id="insta">
+                <p>Instagram</p>
+                <input class="insta" type="text">
+            </div>
+            <div id="phone">
+                <p>Моб. тел.</p>
+                <input class="phone" type="tel">
+            </div>
+            <div id="email">
+                <p>Email</p>
+                <input class="email" type="email">
+            </div>
+            <div id="country">
+                <p>Країна</p>
+                <input class="country" type="text">
+            </div>
+            <div id="city">
+                <p>Місто</p>
+                <input class="city" type="text">
+            </div>
+            <div id="street">
+                <p>Вулиця</p>
+                <input class="street" type="text">
+            </div>
+            <div id="house">
+                <p>Буд.</p>
+                <input class="house" type="text">
+            </div>
+            <div id="flat">
+                <p>Кв.</p>
+                <input class="flat" type="number">
+            </div>
+        </div>
+
+        <p id="owninf">Надішліть, будь ласка, детальний опис місцезнаходження знайденого Вами улюбленця:</p>
+        <div class="window">
+            <textarea class="location"></textarea>
+            <button class="send" type="submit">Надіслати</button>
+        </div>
+
+        <div class="sent">
+            Ваше повідомлення надіслано власнику.<br>Дякуємо за допомогу!
+        </div>
+    </form>
+</body>
